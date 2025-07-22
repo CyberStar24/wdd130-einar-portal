@@ -12,12 +12,21 @@
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 150px auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+}
+
+p, a {
+    font-family: var(--main-font);
 }
 
 h2 {
@@ -35,7 +44,6 @@ h2 {
 }
 
 #content {
-    max-width: 1600px;
     margin: 0 auto;
     background-color: var(--accent1-color);
     font-size: 22px;
