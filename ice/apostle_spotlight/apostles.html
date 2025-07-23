@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            background-color: #e8eced;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        #card {
+            background-image: url(images/christus.webp);
+            background-position: -300px 0px;
+            border: 8px solid #151515;
+            border-radius: 15px;
+            text-align: center;
+            width: 1400px;
+            height: auto;
+            margin: auto;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        #first_pres {
+            grid-column: 2/6;
+        }
+
+        h1, h2 {
+            grid-column: 2/6;
+        }
+
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+            border: 7px solid white;
+            margin: 10px;
+            transition: 0.25s;
+        }
+
+        img:hover {
+            border: 7px solid #007da5;
+            box-shadow: 5px 5px 10px #181818;
+            transform: scale(105%);
+        }
+
+        .tall_img {
+            height: 150px;
+            width: 150px;
+            object-position: 100% 0%;
+        }
+        
+        #prophet {
+            width: 175px;
+        }
+
+        .quorum_of_twelve {
+            grid-column: 2/6;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            margin-bottom: 50px;
+        }
+
+        .quorum_of_twelve img {
+            width: 120px;
+            height: 120px;
+            object-position: 100% 0%;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <h1>First Presidency</h1>
+        <div id="first_pres">
+            <img class="tall_img" src="images/oaks.webp" alt="Dallin H. Oaks">
+            <img id="prophet" src="images/nelson.webp" alt="Russell M. Nelson">
+            <img class="tall_img" src="images/eyring.webp" alt="Henry B. Eyring">
+        </div>
+        <h2>Quorum of the Twelve Apostles</h2>
+        <div class="quorum_of_twelve">
+            <img src="images/holland.webp" alt="">
+            <img src="images/uchtdorf.webp" alt="">
+            <img src="images/bednar.webp" alt="">
+            <img src="images/cook.webp" alt="">
+            <img src="images/christofferson.webp" alt="">
+            <img src="images/anderson.webp" alt="">
+            <img src="images/rasband.webp" alt="">
+            <img src="images/stevenson.webp" alt="">
+            <img src="images/renlund.webp" alt="">
+            <img src="images/gong.webp" alt="">
+            <img src="images/soares.webp" alt="">
+            <img src="images/kearon.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>

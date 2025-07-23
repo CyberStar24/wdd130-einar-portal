@@ -8,27 +8,43 @@
     <title>Einar's Portal Page</title>
 </head>
 <body>
+    <div id="hero">
+        <herotext>
+            <h1>Welcome to Einar's Portal Page</h1>
+        </herotext>
+    </div>
     <header>
         <a id="logo" href="index.html"><img src="images/sitelogo.png" alt="Portal page logo"></a>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="wwr/index.html">WWR</a>
-            <a href="#">ICE</a>
+            <a class="menuitem" href="index.html">Home</a>
+            <a class="menuitem" href="client_report.html">Client Report</a>
+            <a class="menuitem" href="wwr/index.html">WWR</a>
+            <dropdown class="menuitem">
+                <span>ICE</span>
+                <content>
+                    <a href="ice/prophet_cards/nelson.html">Prophet Card</a>
+                    <a href="ice/apostle_spotlight/apostles.html">Apostle Spotlight</a>
+                    <a href="ice/favorite_devo/favdevo.html">Favorate Devo</a>
+                    <a href="ice/fathersday/index.html">Holiday Page</a>
+                    <a href="ice/grid_flags/flags.html">Country Flags</a>
+                    <a href="ice/positioning/positioning.html">CSS Positioning</a>
+                    <a href="ice/gallery/gallery.html">Image Gallery</a>
+                    <a href="ice/signup/signup.html">Signup Form</a>
+                </content>
+            </dropdown>
         </nav>
     </header>
     <main>
-        <h1>Welcome to Einar's Portal Page</h1>
         <section>
-            <img src="image1.jpg" alt="">
+            <img src="image1.jpg" alt="image1">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione incidunt, quia architecto, soluta debitis voluptatum illo, quidem harum dolorem vitae et dignissimos aut quo voluptates dicta dolor. Suscipit, tempora tempore?</p>
         </section>
         <section>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus consequuntur commodi praesentium aspernatur est voluptatum, incidunt blanditiis magni ea sit quis beatae officiis quisquam? Reprehenderit enim perspiciatis nihil modi.</p>
-            <img src="image2.jpg" alt="">
+            <img src="image2.jpg" alt="image2">
         </section>
         <section>
-            <img src="image3.jpg" alt="">
+            <img src="image3.jpg" alt="image3">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aperiam hic impedit culpa sint nobis esse voluptatibus voluptas error eius velit veniam repellendus nulla tenetur, molestias iure, quibusdam, omnis amet.</p>
         </section>
         <table>
@@ -38,24 +54,24 @@
                 <th>Time</th>
             </tr>
             <tr>
-                <th>PH101</th>
-                <th>M W F</th>
-                <th>10:15 - 11:15</th>
+                <td>PH101</td>
+                <td>M W F</td>
+                <td>10:15 - 11:15</td>
             </tr>
             <tr>
-                <th>CSE111</th>
-                <th>M W</th>
-                <th>11:30 - 12:30</th>
+                <td>CSE111</td>
+                <td>M W</td>
+                <td>11:30 - 12:30</td>
             </tr>
             <tr>
-                <th>WDD130</th>
-                <th>T TH</th>
-                <th>9:00 - 10:00</th>
+                <td>WDD130</td>
+                <td>T TH</td>
+                <td>9:00 - 10:00</td>
             </tr>
             <tr>
-                <th>ECEN106</th>
-                <th>T TH</th>
-                <th>10:15 - 11:15</th>
+                <td>ECEN106</td>
+                <td>T TH</td>
+                <td>10:15 - 11:15</td>
             </tr>
         </table>
     </main>
