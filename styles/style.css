@@ -50,7 +50,7 @@ header {
 nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: space-betwee1;
+    justify-content: space-between;
     justify-items: center;
     align-items: center;
 }
