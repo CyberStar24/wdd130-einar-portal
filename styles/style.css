@@ -12,6 +12,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, th {
@@ -61,44 +62,53 @@ nav .menuitem {
     font-size: 22px;
     text-decoration: none;
     height: 60px;
-    width: 150px;
+    width: 90%;
 }
 
 dropdown {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    width: 100px;
+    width: 95%;
     height: 50px;
     font-size: 22px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .2s ease-in-out;
 }
 
 dropdown content {
-    display: none;
     position: absolute;
-    z-index: 1;
     background-color: var(--main-color);
-    min-width: 100px;
-    box-shadow: 5px 5px 5px black;
-    padding: 10px;
-    border: 3px solid var(--secondary-color);
+    min-width: 90%;
     align-self: baseline;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: .4s ease-in-out;
 }
 
 dropdown content a {
     padding: 10px;
-    margin: 5px;
     text-decoration: none;
     color: var(--accent-2);
+    border: 2px solid var(--main-color);
+    transition: .2s ease-in-out;
+}
+
+dropdown content a:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--accent-1);
+    border-radius: 10px;
 }
 
 dropdown:hover content {
-    display: block;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 5px 5px 5px black;
+    height: 630%;
+    z-index: 3;
 }
 
 header #logo {
@@ -124,7 +134,7 @@ nav a {
     transition: .2s ease-in-out;
 }
 
-nav a:hover {
+nav .menuitem:hover {
     background-color: var(--secondary-color);
     border-radius: 10px;
     box-shadow: 4px 4px 5px black;
@@ -146,30 +156,54 @@ main {
     font-family: var(--main-font);
 }
 
-main h1 {
-    grid-column: 1/4;
-    text-align: center;
-    padding: 50px;
-}
-
 main section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to top, #1155cc40, transparent), url(/images/wires.jpg);
     background-color: var(--secondary-color);
+    opacity: 50%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
     height: 500px;
     margin: 0 50px;
     padding: 20px;
     box-shadow: 0 0 20px var(--main-color);
+    border: 5px solid transparent;
     border-radius: 15px;
-    transition: .5s ease-in-out;
     font-size: 18px;
+    text-align: center;
+    transition: .4s ease-in-out;
+    z-index: 0;
+}
+
+main section p, h2 {
+    text-shadow: 
+        1px 1px 0 var(--accent-1),
+        1px -1px 0 var(--accent-1),
+        -1px 1px 0 var(--accent-1),
+        -1px -1px 0 var(--accent-1);
+}
+
+main .report {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: ;
+    height: 500px;
+    margin: 0 50px;
+    padding: 20px;
 }
 
 main section:hover {
-    transform: scale(1.05);
+    cursor: default;
+    opacity: 100%;
     box-shadow: none;
+    border: 5px solid var(--main-color);
+    transform: scale(1.01);
 }
 
 main table {
