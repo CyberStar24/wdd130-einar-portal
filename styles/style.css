@@ -37,6 +37,10 @@ h1, h2, h3, h4, h5, th {
     color: white;
 }
 
+#hero herotext h1 {
+    font-size: 3rem;
+}
+
 header {
     background-color: var(--main-color);
     height: 100px;
