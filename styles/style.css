@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, th {
 }
 
 #hero {
-    background-image: url(/images/heroimage.jpg);
+    background-image: url(../images/heroimage.jpg);
     height: 25rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ main section {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to top, #1155cc40, transparent), url(/images/wires.jpg);
+    background-image: linear-gradient(to top, #1155cc40, transparent), url(../images/wires.jpg);
     background-color: var(--secondary-color);
     background-position: center;
     background-repeat: repeat;
